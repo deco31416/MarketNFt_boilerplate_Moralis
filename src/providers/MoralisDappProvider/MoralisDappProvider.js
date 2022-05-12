@@ -8,7 +8,7 @@ function MoralisDappProvider({ children }) {
   const [walletAddress, setWalletAddress] = useState();
   const [chainId, setChainId] = useState();       
   const [contractABI, setContractABI] = useState(abiNFT); //Smart Contract ABI here
-  const [marketAddress, setMarketAddress] = useState("0xFc7f1a56E8846365C28E2518901C15920A0958Ed"); //Smart Contract Address Here
+  const [marketAddress, setMarketAddress] = useState("0xFc7f1a56E8846365C28E2518901C15920A0958Ed") //Smart Contract Address Here
 
 
   useEffect(() => {
