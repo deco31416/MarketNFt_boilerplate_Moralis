@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useMoralis } from "react-moralis";
 import MoralisDappContext from "./context";
-import abiNFT from "../abis/nft.json";
 
 function MoralisDappProvider({ children }) {
   const { web3, Moralis, user } = useMoralis();
   const [walletAddress, setWalletAddress] = useState();
   const [chainId, setChainId] = useState();       
-  const [contractABI, setContractABI] = useState(abiNFT); //Smart Contract ABI here
+  const [contractABI, setContractABI] = useState('{"noContractDeployed": true}'); //Smart Contract ABI here
   const [marketAddress, setMarketAddress] = useState(); //Smart Contract Address Here
 
 
